@@ -22,9 +22,9 @@ int form_the_largest_number(int number)
           tempN = number;
           int indeks = 0;
           while (tempN != 0){
-              numberArray[indeks ] = tempN % 10;
+              numberArray[indeks] = tempN % 10;
               tempN /= 10;
-              indeks ++;
+              indeks++;
           }
 
           // Sortowanie tablicy
@@ -44,7 +44,7 @@ int form_the_largest_number(int number)
           // zamiana tablicy na inta
           for(int i = 0; i < length; i++)
           {
-               returnNum *=10;
+              returnNum *=10;
               returnNum+=numberArray[i];
           }
           free(numberArray);
